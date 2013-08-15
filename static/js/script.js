@@ -93,7 +93,7 @@ g.stop = function() {
 
 g.playNext = function () {
   var next_tr = parseInt(g.current_track) + 1;
-  if (next_tr < g.songlist.length) {
+  if (next_tr <= g.songlist.length) {
     g.play(next_tr) 
   }
   else {
